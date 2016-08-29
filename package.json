@@ -1,0 +1,49 @@
+{
+  "name": "egg-ots",
+  "version": "1.0.0",
+  "description": "aliyun ots plugin for egg",
+  "eggPlugin": {
+    "name": "ots"
+  },
+  "keywords": [
+    "egg",
+    "plugin"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "autod": "2",
+    "egg": "1",
+    "egg-bin": "1",
+    "egg-ci": "1",
+    "egg-mock": "1",
+    "eslint": "3",
+    "eslint-config-egg": "3",
+    "intelli-espower-loader": "1",
+    "power-assert": "1",
+    "supertest": "2"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "scripts": {
+    "test": "npm run lint && npm run test-local",
+    "test-local": "egg-bin test -r intelli-espower-loader",
+    "cov": "egg-bin cov -r intelli-espower-loader",
+    "lint": "eslint --ext js . --fix",
+    "ci": "npm run lint && npm run cov",
+    "autod": "autod"
+  },
+  "ci": {
+    "version": "4, 6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eggjs/egg-ots.git"
+  },
+  "bugs": {
+    "url": "https://github.com/eggjs/egg/issues"
+  },
+  "homepage": "https://github.com/eggjs/egg-ots#readme",
+  "author": "tianyi.jiangty",
+  "license": "MIT"
+}

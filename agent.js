@@ -1,5 +1,7 @@
 'use strict';
 
-module.exports = agent => {
+const ots = require('./lib/ots');
 
+module.exports = agent => {
+  if (agent.config.ots.agent) ots(agent);
 };

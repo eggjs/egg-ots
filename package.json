@@ -9,13 +9,15 @@
     "egg",
     "plugin"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "ots2": "^1.2.2"
+  },
   "devDependencies": {
     "autod": "2",
-    "egg": "1",
+    "egg": "*",
     "egg-bin": "1",
     "egg-ci": "1",
-    "egg-mock": "1",
+    "egg-mock": "*",
     "eslint": "3",
     "eslint-config-egg": "3",
     "intelli-espower-loader": "1",
